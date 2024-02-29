@@ -1,4 +1,4 @@
-# SearXNG settings
+# Shadoow settings
 
 use_default_settings: true
 
@@ -7,7 +7,7 @@ general:
   instance_name: "Shadoow"
 
 search:
-  safe_search: 2
+  safe_search: 0
   autocomplete: 'google'
 
 server:

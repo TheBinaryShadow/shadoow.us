@@ -32,9 +32,9 @@ search:
   # Existing autocomplete backends: "dbpedia", "duckduckgo", "google", "yandex", "mwmbl",
   # "seznam", "startpage", "stract", "swisscows", "qwant", "wikipedia" - leave blank to turn it off
   # by default.
-  autocomplete: ""
+  autocomplete: "google"
   # minimun characters to type before autocompleter starts
-  autocomplete_min: 4
+  autocomplete_min: 2
   # Default search language - leave blank to detect from browser information or
   # use codes from 'languages.py'
   default_lang: "auto"
@@ -111,9 +111,9 @@ ui:
   templates_path: ""
   # query_in_title: When true, the result page's titles contains the query
   # it decreases the privacy, since the browser can records the page titles.
-  query_in_title: false
+  query_in_title: true
   # infinite_scroll: When true, automatically loads the next page when scrolling to bottom of the current page.
-  infinite_scroll: false
+  infinite_scroll: true
   # ui theme
   default_theme: simple
   # center the results ?
