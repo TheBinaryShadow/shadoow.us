@@ -1,7 +1,6 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
-# lint: pylint
-"""Searchcode (IT)
-
+"""
+ Searchcode (IT)
 """
 
 from json import loads
@@ -19,29 +18,24 @@ about = {
 
 # engine dependent config
 categories = ['it']
-search_api = 'https://searchcode.com/api/codesearch_I/?'
+paging = True
+
+# search-url
+url = 'https://searchcode.com/'
+search_url = url + 'api/codesearch_I/?{query}&p={pageno}'
 
 # special code-endings which are not recognised by the file ending
 code_endings = {'cs': 'c#', 'h': 'c', 'hpp': 'cpp', 'cxx': 'cpp'}
 
-# paging is broken in searchcode.com's API .. not sure it will ever been fixed
-# paging = True
 
-
+# do search-request
 def request(query, params):
-    args = urlencode(
-        {
-            'q': query,
-            # paging is broken in searchcode.com's API
-            # 'p': params['pageno'] - 1,
-            # 'per_page': 10,
-        }
-    )
-    params['url'] = search_api + args
-    logger.debug("query_url --> %s", params['url'])
+    params['url'] = search_url.format(query=urlencode({'q': query}), pageno=params['pageno'] - 1)
+
     return params
 
 
+# get response from search-request
 def response(resp):
     results = []
 
@@ -53,7 +47,7 @@ def response(resp):
         title = "" + result['name'] + " - " + result['filename']
         repo = result['repo']
 
-        lines = {}
+        lines = dict()
         for line, code in result['lines'].items():
             lines[int(line)] = code
 

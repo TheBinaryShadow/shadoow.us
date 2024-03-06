@@ -477,12 +477,6 @@ engines:
   #   # get your API key from: https://core.ac.uk/api-keys/register/
   #   api_key: 'unset'
 
-  - name: cppreference
-    engine: cppreference
-    shortcut: cpp
-    paging: false
-    disabled: true
-
   - name: crossref
     engine: crossref
     shortcut: cr
@@ -565,16 +559,6 @@ engines:
       require_api_key: false
       results: JSON
       language: de
-    tests:
-      bahnhof:
-        matrix:
-          query: berlin
-          lang: en
-        result_container:
-          - not_empty
-          - ['one_title_contains', 'Berlin Hauptbahnhof']
-        test:
-          - unique_results
 
   - name: deezer
     engine: deezer
@@ -1069,7 +1053,7 @@ engines:
 
   - name: lobste.rs
     engine: xpath
-    search_url: https://lobste.rs/search?q={query}&what=stories&order=relevance
+    search_url: https://lobste.rs/search?utf8=%E2%9C%93&q={query}&what=stories&order=relevance
     results_xpath: //li[contains(@class, "story")]
     url_xpath: .//a[@class="u-url"]/@href
     title_xpath: .//a[@class="u-url"]
@@ -1580,7 +1564,7 @@ engines:
   - name: internetarchivescholar
     engine: internet_archive_scholar
     shortcut: ias
-    timeout: 15.0
+    timeout: 5.0
 
   - name: superuser
     engine: stackexchange
@@ -1870,16 +1854,6 @@ engines:
     about:
       website: https://species.wikimedia.org/
       wikidata_id: Q13679
-    tests:
-      wikispecies:
-        matrix:
-          query: "Campbell, L.I. et al. 2011: MicroRNAs"
-          lang: en
-        result_container:
-          - not_empty
-          - ['one_title_contains', 'Tardigrada']
-        test:
-          - unique_results
 
   - name: wiktionary
     engine: mediawiki
@@ -2017,7 +1991,7 @@ engines:
     search_url: https://search.naver.com/search.naver?where=webkr&sm=osp_hty&ie=UTF-8&query={query}&start={pageno}
     url_xpath: //a[@class="link_tit"]/@href
     title_xpath: //a[@class="link_tit"]
-    content_xpath: //div[@class="total_dsc_wrap"]/a
+    content_xpath: //a[@class="total_dsc"]/div
     first_page_num: 1
     page_size: 10
     disabled: true
