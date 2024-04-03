@@ -49,9 +49,9 @@ search:
   #   - fr
   #   - fr-BE
   # ban time in seconds after engine errors
-  ban_time_on_fail: 5
+  ban_time_on_fail: 1
   # max ban time in seconds after engine errors
-  max_ban_time_on_fail: 120
+  max_ban_time_on_fail: 5
   suspended_times:
     # Engine suspension time after error (in seconds; set to 0 to disable)
     # For error "Access denied" and "HTTP error [402, 403]"
@@ -79,7 +79,7 @@ server:
   # by ${SEARXNG_URL}.
   base_url: false  # "http://example.com/location"
   limiter: false  # rate limit the number of request on the instance, block some bots
-  public_instance: false  # enable features designed only for public instances
+  public_instance: true  # enable features designed only for public instances
 
   # If your instance owns a /etc/searxng/settings.yml file, then set the following
   # values there.
@@ -167,10 +167,10 @@ outgoing:
   # to the administrator
   useragent_suffix: ""
   # The maximum number of concurrent connections that may be established.
-  pool_connections: 100
+  pool_connections: 1000
   # Allow the connection pool to maintain keep-alive connections below this
   # point.
-  pool_maxsize: 20
+  pool_maxsize: 200
   # See https://www.python-httpx.org/http2/
   enable_http2: true
   # uncomment below section if you want to use a custom server certificate
