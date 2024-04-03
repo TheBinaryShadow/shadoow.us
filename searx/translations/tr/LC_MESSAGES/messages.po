@@ -15,20 +15,24 @@
 # return42 <markus.heiser@darmarit.de>, 2023, 2024.
 # plawlost <ceo@plawlabs.org>, 2023.
 # Oğuz Ersen <oguz@ersen.moe>, 2024.
+# ggnoredo <mail@fahriuzun.com>, 2024.
+# return42 <return42@users.noreply.translate.codeberg.org>, 2024.
+# Oğuz Ersen <ersen@users.noreply.translate.codeberg.org>, 2024.
 msgid ""
 msgstr ""
-"Project-Id-Version:  searx\n"
+"Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-10 07:07+0000\n"
-"PO-Revision-Date: 2024-02-08 15:56+0000\n"
-"Last-Translator: return42 <markus.heiser@darmarit.de>\n"
+"POT-Creation-Date: 2024-02-25 15:26+0000\n"
+"PO-Revision-Date: 2024-03-18 11:53+0000\n"
+"Last-Translator: Oğuz Ersen <ersen@users.noreply.translate.codeberg.org>\n"
+"Language-Team: Turkish <https://translate.codeberg.org/projects/searxng/"
+"searxng/tr/>\n"
 "Language: tr\n"
-"Language-Team: Turkish "
-"<https://translate.codeberg.org/projects/searxng/searxng/tr/>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Weblate 5.4.2\n"
 "Generated-By: Babel 2.14.0\n"
 
 #. CONSTANT_NAMES['NO_SUBGROUPING']
@@ -159,7 +163,7 @@ msgstr "karanlık"
 #. BRAND_CUSTOM_LINKS['UPTIME']
 #: searx/searxng.msg
 msgid "Uptime"
-msgstr ""
+msgstr "Çalışma Süresi"
 
 #. BRAND_CUSTOM_LINKS['ABOUT']
 #: searx/searxng.msg searx/templates/simple/base.html:49
@@ -170,8 +174,8 @@ msgstr "Hakkında"
 msgid "No item found"
 msgstr "Öğe bulunamadı"
 
-#: searx/engines/qwant.py:280
-#: searx/templates/simple/result_templates/images.html:20 searx/webapp.py:334
+#: searx/engines/qwant.py:282
+#: searx/templates/simple/result_templates/images.html:23 searx/webapp.py:334
 msgid "Source"
 msgstr "Kaynak"
 
@@ -179,15 +183,15 @@ msgstr "Kaynak"
 msgid "Error loading the next page"
 msgstr "Sonraki sayfa yüklenemedi"
 
-#: searx/webapp.py:493 searx/webapp.py:889
+#: searx/webapp.py:483 searx/webapp.py:879
 msgid "Invalid settings, please edit your preferences"
 msgstr "Geçersiz ayarlar, lütfen tercihlerinizi düzenleyin"
 
-#: searx/webapp.py:509
+#: searx/webapp.py:499
 msgid "Invalid settings"
 msgstr "Geçersiz ayarlar"
 
-#: searx/webapp.py:586 searx/webapp.py:668
+#: searx/webapp.py:576 searx/webapp.py:658
 msgid "search error"
 msgstr "arama hatası"
 
@@ -283,7 +287,7 @@ msgstr "{title} (ESKİ)"
 msgid "This entry has been superseded by"
 msgstr "Bu girişin yerini alan"
 
-#: searx/engines/qwant.py:282
+#: searx/engines/qwant.py:284
 msgid "Channel"
 msgstr "Kanal"
 
@@ -475,6 +479,7 @@ msgid "a privacy-respecting, open metasearch engine"
 msgstr "Gizliliğiniz önemseyen, açık meta arama motoru"
 
 #: searx/templates/simple/base.html:68
+#: searx/templates/simple/result_templates/packages.html:59
 msgid "Source code"
 msgstr "Kaynak kodu"
 
@@ -508,7 +513,7 @@ msgstr "Uzunluk"
 
 #: searx/templates/simple/macros.html:37
 #: searx/templates/simple/result_templates/files.html:34
-#: searx/templates/simple/result_templates/images.html:18
+#: searx/templates/simple/result_templates/images.html:19
 #: searx/templates/simple/result_templates/paper.html:6
 msgid "Author"
 msgstr "Hazırlayan"
@@ -905,6 +910,7 @@ msgid "Keywords"
 msgstr "Anahtar kelimeler"
 
 #: searx/templates/simple/preferences/answerers.html:6
+#: searx/templates/simple/result_templates/packages.html:7
 msgid "Name"
 msgstr "Ad"
 
@@ -1197,6 +1203,7 @@ msgid "This site did not provide any description."
 msgstr "BU site herhangi bir açıklama sağlamadı."
 
 #: searx/templates/simple/result_templates/files.html:38
+#: searx/templates/simple/result_templates/images.html:22
 #: searx/templates/simple/result_templates/torrent.html:11
 msgid "Filesize"
 msgstr "Dosya boyutu"
@@ -1235,15 +1242,19 @@ msgstr "Gün"
 msgid "Type"
 msgstr "Yaz"
 
-#: searx/templates/simple/result_templates/images.html:19
+#: searx/templates/simple/result_templates/images.html:20
+msgid "Resolution"
+msgstr "Çözünürlük"
+
+#: searx/templates/simple/result_templates/images.html:21
 msgid "Format"
 msgstr "Format"
 
-#: searx/templates/simple/result_templates/images.html:21
+#: searx/templates/simple/result_templates/images.html:24
 msgid "Engine"
 msgstr "Motor"
 
-#: searx/templates/simple/result_templates/images.html:22
+#: searx/templates/simple/result_templates/images.html:25
 msgid "View source"
 msgstr "Kaynağı göster"
 
@@ -1258,6 +1269,39 @@ msgstr "haritayı göster"
 #: searx/templates/simple/result_templates/map.html:43
 msgid "hide map"
 msgstr "haritayı gizle"
+
+#: searx/templates/simple/result_templates/packages.html:12
+msgid "Version"
+msgstr "Sürüm"
+
+#: searx/templates/simple/result_templates/packages.html:18
+msgid "Maintainer"
+msgstr "Sahibi"
+
+#: searx/templates/simple/result_templates/packages.html:24
+msgid "Updated at"
+msgstr "Güncellenme tarihi"
+
+#: searx/templates/simple/result_templates/packages.html:30
+#: searx/templates/simple/result_templates/paper.html:25
+msgid "Tags"
+msgstr "Etiketler"
+
+#: searx/templates/simple/result_templates/packages.html:36
+msgid "Popularity"
+msgstr "Popülerlik"
+
+#: searx/templates/simple/result_templates/packages.html:42
+msgid "License"
+msgstr "Lisans"
+
+#: searx/templates/simple/result_templates/packages.html:52
+msgid "Project"
+msgstr "Proje"
+
+#: searx/templates/simple/result_templates/packages.html:55
+msgid "Project homepage"
+msgstr "Proje ana sayfası"
 
 #: searx/templates/simple/result_templates/paper.html:5
 msgid "Published date"
@@ -1274,10 +1318,6 @@ msgstr "Editör"
 #: searx/templates/simple/result_templates/paper.html:23
 msgid "Publisher"
 msgstr "Yayımlayıcı"
-
-#: searx/templates/simple/result_templates/paper.html:25
-msgid "Tags"
-msgstr "Etiketler"
 
 #: searx/templates/simple/result_templates/paper.html:26
 msgid "DOI"
@@ -1743,4 +1783,3 @@ msgstr "görüntüyü gizle"
 #~ "herhangi bir sonuç bulamadık. Lütfen, "
 #~ "başka bir sorgu kullanın veya daha "
 #~ "fazla kategoride arama yapın."
-

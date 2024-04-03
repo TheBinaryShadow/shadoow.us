@@ -23,8 +23,4 @@ gh-pages/
 .idea/
 
 searx/version_frozen.py
-utils/templates/etc/httpd/sites-available/searxng.conf:socket
-utils/templates/etc/nginx/default.apps-available/searxng.conf:socket
-utils/templates/etc/uwsgi/apps-archlinux/searxng.ini:socket
-utils/templates/etc/uwsgi/apps-available/searxng.ini:socket
-utils/templates/etc/httpd/sites-available/searxng.conf:socket
+.dir-locals.el

@@ -14,21 +14,25 @@
 # Cavemanly <k.adel.2m@protonmail.com>, 2023.
 # Rick1029 <yoshibear1029@gmail.com>, 2024.
 # nebras <johndevand@tutanota.com>, 2024.
+# return42 <return42@users.noreply.translate.codeberg.org>, 2024.
+# Yahya-Lando <Yahya-Lando@users.noreply.translate.codeberg.org>, 2024.
 msgid ""
 msgstr ""
-"Project-Id-Version:  searx\n"
+"Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-10 07:07+0000\n"
-"PO-Revision-Date: 2024-02-10 07:07+0000\n"
-"Last-Translator: nebras <johndevand@tutanota.com>\n"
+"POT-Creation-Date: 2024-02-25 15:26+0000\n"
+"PO-Revision-Date: 2024-03-25 23:18+0000\n"
+"Last-Translator: Yahya-Lando <Yahya-Lando@users.noreply.translate.codeberg."
+"org>\n"
+"Language-Team: Arabic <https://translate.codeberg.org/projects/searxng/"
+"searxng/ar/>\n"
 "Language: ar\n"
-"Language-Team: Arabic "
-"<https://translate.codeberg.org/projects/searxng/searxng/ar/>\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
-"n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 5.4.2\n"
 "Generated-By: Babel 2.14.0\n"
 
 #. CONSTANT_NAMES['NO_SUBGROUPING']
@@ -170,8 +174,8 @@ msgstr "حَول"
 msgid "No item found"
 msgstr "تعذر العثور على عناصر"
 
-#: searx/engines/qwant.py:280
-#: searx/templates/simple/result_templates/images.html:20 searx/webapp.py:334
+#: searx/engines/qwant.py:282
+#: searx/templates/simple/result_templates/images.html:23 searx/webapp.py:334
 msgid "Source"
 msgstr "المصدر"
 
@@ -179,15 +183,15 @@ msgstr "المصدر"
 msgid "Error loading the next page"
 msgstr "حدث خلل أثناء تحميل الصفحة التالية"
 
-#: searx/webapp.py:493 searx/webapp.py:889
+#: searx/webapp.py:483 searx/webapp.py:879
 msgid "Invalid settings, please edit your preferences"
 msgstr "إنّ الإعدادات خاطئة، يرجى تعديل خياراتك"
 
-#: searx/webapp.py:509
+#: searx/webapp.py:499
 msgid "Invalid settings"
 msgstr "إعدادات غير صالحة"
 
-#: searx/webapp.py:586 searx/webapp.py:668
+#: searx/webapp.py:576 searx/webapp.py:658
 msgid "search error"
 msgstr "خطأ في البحث"
 
@@ -283,7 +287,7 @@ msgstr "{title} (قديما)"
 msgid "This entry has been superseded by"
 msgstr "هذا الإدخال تم استبداله بـ"
 
-#: searx/engines/qwant.py:282
+#: searx/engines/qwant.py:284
 msgid "Channel"
 msgstr "القناة"
 
@@ -471,6 +475,7 @@ msgid "a privacy-respecting, open metasearch engine"
 msgstr "الخصوصية ذو الاعتبار, محرك البحث عميق عُموميا"
 
 #: searx/templates/simple/base.html:68
+#: searx/templates/simple/result_templates/packages.html:59
 msgid "Source code"
 msgstr "شيفرة مصدرية"
 
@@ -504,7 +509,7 @@ msgstr "الطول"
 
 #: searx/templates/simple/macros.html:37
 #: searx/templates/simple/result_templates/files.html:34
-#: searx/templates/simple/result_templates/images.html:18
+#: searx/templates/simple/result_templates/images.html:19
 #: searx/templates/simple/result_templates/paper.html:6
 msgid "Author"
 msgstr "الكاتب"
@@ -869,7 +874,7 @@ msgstr "حدث الصفحة."
 
 #: searx/templates/simple/messages/no_results.html:20
 msgid "Search for another query or select another category (above)."
-msgstr "ابحث عن استعلام آخر أو اختار فئتار فئة أخرى (أعلاه)"
+msgstr "ابحث عن استعلام آخر أو اختار فئة أخرى (أعلاه)"
 
 #: searx/templates/simple/messages/no_results.html:21
 msgid "Change the search engine used in the preferences:"
@@ -897,6 +902,7 @@ msgid "Keywords"
 msgstr "الكلمات الرمزية"
 
 #: searx/templates/simple/preferences/answerers.html:6
+#: searx/templates/simple/result_templates/packages.html:7
 msgid "Name"
 msgstr "التسمية"
 
@@ -1184,6 +1190,7 @@ msgid "This site did not provide any description."
 msgstr "هذا الموقع لم يقدم أي وصف."
 
 #: searx/templates/simple/result_templates/files.html:38
+#: searx/templates/simple/result_templates/images.html:22
 #: searx/templates/simple/result_templates/torrent.html:11
 msgid "Filesize"
 msgstr "حجم الملف"
@@ -1222,15 +1229,19 @@ msgstr "تاريخ"
 msgid "Type"
 msgstr "نوع"
 
-#: searx/templates/simple/result_templates/images.html:19
+#: searx/templates/simple/result_templates/images.html:20
+msgid "Resolution"
+msgstr "الدقة"
+
+#: searx/templates/simple/result_templates/images.html:21
 msgid "Format"
 msgstr "صيغة"
 
-#: searx/templates/simple/result_templates/images.html:21
+#: searx/templates/simple/result_templates/images.html:24
 msgid "Engine"
 msgstr "محرك"
 
-#: searx/templates/simple/result_templates/images.html:22
+#: searx/templates/simple/result_templates/images.html:25
 msgid "View source"
 msgstr "عرض المصدر"
 
@@ -1245,6 +1256,39 @@ msgstr "عرض الخريطة"
 #: searx/templates/simple/result_templates/map.html:43
 msgid "hide map"
 msgstr "إخفاء الخريطة"
+
+#: searx/templates/simple/result_templates/packages.html:12
+msgid "Version"
+msgstr "الإصدار"
+
+#: searx/templates/simple/result_templates/packages.html:18
+msgid "Maintainer"
+msgstr ""
+
+#: searx/templates/simple/result_templates/packages.html:24
+msgid "Updated at"
+msgstr "تم التحديث في"
+
+#: searx/templates/simple/result_templates/packages.html:30
+#: searx/templates/simple/result_templates/paper.html:25
+msgid "Tags"
+msgstr "السمات"
+
+#: searx/templates/simple/result_templates/packages.html:36
+msgid "Popularity"
+msgstr "الشعبية"
+
+#: searx/templates/simple/result_templates/packages.html:42
+msgid "License"
+msgstr "الترخيص"
+
+#: searx/templates/simple/result_templates/packages.html:52
+msgid "Project"
+msgstr "المشروع"
+
+#: searx/templates/simple/result_templates/packages.html:55
+msgid "Project homepage"
+msgstr "صفحة المشروع الرئيسية"
 
 #: searx/templates/simple/result_templates/paper.html:5
 msgid "Published date"
@@ -1261,10 +1305,6 @@ msgstr "المحرر"
 #: searx/templates/simple/result_templates/paper.html:23
 msgid "Publisher"
 msgstr "الناشر"
-
-#: searx/templates/simple/result_templates/paper.html:25
-msgid "Tags"
-msgstr "السمات"
 
 #: searx/templates/simple/result_templates/paper.html:26
 msgid "DOI"
@@ -1727,4 +1767,3 @@ msgstr "إخفاء الفيديو"
 #~ "لم نتوصل إلى العثور على أية نتيجة."
 #~ " الرجاء إعادة صياغة طلب البحث أو "
 #~ "إبحث مع تحديد أكثر من فئة."
-
